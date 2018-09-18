@@ -1,5 +1,3 @@
-import '../../libs/normalize.css';
-
 import React, { Component } from 'react';
 
 import { Fullpage, HorizontalSlider, Slide } from 'fullpage-react';
@@ -10,6 +8,9 @@ import Up from '../../img/up-chevron.png';
 import Down from '../../img/down-chevron.png';
 import Left from '../../img/left-chevron.png';
 import Right from '../../img/right-chevron.png';
+
+import '../../libs/normalize.css';
+import '../../style/FullpageLayout.css';
 
 const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
 
@@ -126,16 +127,12 @@ class FullpageLayout extends Component {
     let topNav;
 
     if (this.state.Fullpage === 0) {
-      topNav = (
-        <div style={topNavStyle}>
-          <Landing />
-        </div>
-      );
+      topNav = null;
     } else {
       topNav = (
         <div style={topNavStyle}>
           <span onClick={prevSlide}>
-            <img src={Up} alt="Up arrow" />
+            <img src={Up} alt="Up arrow" className="up" />
           </span>
         </div>
       );
@@ -143,20 +140,20 @@ class FullpageLayout extends Component {
 
     const bottomNav = (
       <span onClick={nextSlide} style={bottomNavStyle}>
-        <img src={Down} alt="Down arrow" />
+        <img src={Down} alt="Down arrow" className="down" />
       </span>
     );
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
         <span onClick={prevHorizontalSlide}>
-          <img src={Left} alt="Left arrow" />
+          <img src={Left} alt="Left arrow" className="left" />
         </span>
         <span
           style={{ position: 'absolute', right: '0px' }}
           onClick={nextHorizontalSlide}
         >
-          <img src={Right} alt="Right arrow" />
+          <img src={Right} alt="Right arrow" className="right" />
         </span>
       </div>
     );
@@ -181,8 +178,8 @@ class FullpageLayout extends Component {
     );
 
     const verticalSlides = [
-      <Slide style={{ backgroundColor: 'blue' }}>
-        <p>Slide 1</p>
+      <Slide>
+        <Landing />
       </Slide>,
       horizontalSlider,
       <Slide style={{ backgroundColor: 'pink' }}>
