@@ -62,18 +62,43 @@
   }
 }
 
-.up {
+.upArrow {
   animation: bounce-up 2s infinite;
 }
 
-.down {
+.downArrow {
   animation: bounce-down 2s infinite;
 }
 
-.left {
+.leftArrow {
   animation: bounce-left 2s infinite;
 }
 
-.right {
+.rightArrow {
   animation: bounce-right 2s infinite;
+}
+
+.upArrow,
+.downArrow {
+  height: 30px;
+  width: 50px;
+}
+.leftArrow,
+.rightArrow {
+  height: 50px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .upArrow,
+  .downArrow {
+    width: 25px;
+    height: 15px;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    width: 15px;
+    height: 25px;
+  }
 }

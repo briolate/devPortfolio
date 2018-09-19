@@ -9,9 +9,6 @@ import Down from '../../img/down-chevron.png';
 import Left from '../../img/left-chevron.png';
 import Right from '../../img/right-chevron.png';
 
-import '../../libs/normalize.css';
-import '../../style/FullpageLayout.css';
-
 const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
 
 const fullPageOptions = {
@@ -44,6 +41,7 @@ const bottomNavStyle = {
   textAlign: 'center',
   position: 'fixed',
   width: '100%',
+  cursor: 'pointer',
   zIndex: 10,
   bottom: '0px'
 };
@@ -132,7 +130,7 @@ class FullpageLayout extends Component {
       topNav = (
         <div style={topNavStyle}>
           <span onClick={prevSlide}>
-            <img src={Up} alt="Up arrow" className="up" />
+            <img src={Up} alt="Up arrow" className="upArrow" />
           </span>
         </div>
       );
@@ -140,20 +138,20 @@ class FullpageLayout extends Component {
 
     const bottomNav = (
       <span onClick={nextSlide} style={bottomNavStyle}>
-        <img src={Down} alt="Down arrow" className="down" />
+        <img src={Down} alt="Down arrow" className="downArrow" />
       </span>
     );
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
         <span onClick={prevHorizontalSlide}>
-          <img src={Left} alt="Left arrow" className="left" />
+          <img src={Left} alt="Left arrow" className="leftArrow" />
         </span>
         <span
           style={{ position: 'absolute', right: '0px' }}
           onClick={nextHorizontalSlide}
         >
-          <img src={Right} alt="Right arrow" className="right" />
+          <img src={Right} alt="Right arrow" className="rightArrow" />
         </span>
       </div>
     );

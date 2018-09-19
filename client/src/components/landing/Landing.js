@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import '../../style/Landing.css';
-
 class Landing extends Component {
   render() {
     return (
@@ -10,7 +8,7 @@ class Landing extends Component {
           <div className="row">
             <div className="col-md-12 text-center intro">
               <h1 className="display-3 mb-4 title">Evan Arthur Briolat</h1>
-              <p className="lead">Welcome to my life.</p>
+              <p className="lead">Welcome to my world.</p>
             </div>
           </div>
         </div>
