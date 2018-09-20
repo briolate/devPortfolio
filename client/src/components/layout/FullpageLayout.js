@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Fullpage, HorizontalSlider, Slide } from 'fullpage-react';
 
 import Landing from '../landing/Landing';
+import About from '../about/About';
 
 import Up from '../../img/up-chevron.png';
 import Down from '../../img/down-chevron.png';
@@ -175,14 +176,14 @@ class FullpageLayout extends Component {
     );
 
     const horizontalSlides = [
-      <Slide style={{ backgroundColor: 'red' }}>
-        <p>Horizontal 1</p>
+      <Slide>
+        <About />
       </Slide>,
       <Slide style={{ backgroundColor: 'yellow' }}>
-        <p>Horizontal 2</p>
+        <p>TODO: WORK</p>
       </Slide>,
       <Slide style={{ backgroundColor: 'green' }}>
-        <p>Horizontal 3</p>
+        <p>TODO: LABS</p>
       </Slide>
     ];
     horizontalSliderProps.slides = horizontalSlides;

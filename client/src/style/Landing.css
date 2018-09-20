@@ -1,4 +1,9 @@
-.intro {
+.landing {
+  background: linear-gradient(to left, pink 50%, white 50%);
+  height: 100%;
+}
+
+.landing-header {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3em;
   display: flex;
@@ -6,17 +11,13 @@
   align-items: center;
 }
 
-.title {
+.landing-title {
   max-width: 960px;
 }
 
-.lead {
+.landing-lead {
   max-width: 510px;
-}
-
-.header {
-  background: linear-gradient(to left, pink 50%, white 50%);
-  height: 100%;
+  text-shadow: 3px 3px 8px black;
 }
 
 /* TODO: Install lettering.js plygin to enable floating for alternate letters */
@@ -33,7 +34,7 @@
   }
 }
 
-.lead {
+.landing-lead {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;

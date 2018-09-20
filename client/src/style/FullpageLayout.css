@@ -7,10 +7,10 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 
@@ -23,10 +23,10 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
   60% {
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
 }
 
@@ -39,10 +39,10 @@
     transform: translateX(0);
   }
   40% {
-    transform: translateX(30px);
+    transform: translateX(15px);
   }
   60% {
-    transform: translateX(15px);
+    transform: translateX(10px);
   }
 }
 
@@ -55,10 +55,10 @@
     transform: translateX(0);
   }
   40% {
-    transform: translateX(-30px);
+    transform: translateX(-15px);
   }
   60% {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
 
