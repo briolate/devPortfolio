@@ -37,6 +37,18 @@ const topNavStyle = {
   top: '0px'
 };
 
+const topNavStyle2 = {
+  textAlign: 'center',
+  position: 'fixed',
+  width: '100%',
+  cursor: 'pointer',
+  zIndex: 10,
+  display: 'flex',
+  justifyContent: 'flex-end',
+  paddingRight: '16px',
+  paddingTop: '10px'
+};
+
 const bottomNavStyle = {
   textAlign: 'center',
   position: 'fixed',
@@ -125,7 +137,13 @@ class FullpageLayout extends Component {
     let topNav;
 
     if (this.state.Fullpage === 0) {
-      topNav = null;
+      topNav = (
+        <div style={topNavStyle2}>
+          <span onClick={prevSlide}>
+            <i className="fas fa-envelope" style={{ fontSize: '36px' }} />
+          </span>
+        </div>
+      );
     } else {
       topNav = (
         <div style={topNavStyle}>
