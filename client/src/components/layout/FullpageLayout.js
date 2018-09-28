@@ -179,10 +179,10 @@ class FullpageLayout extends Component {
       <Slide>
         <About />
       </Slide>,
-      <Slide style={{ backgroundColor: 'yellow' }}>
+      <Slide style={{ backgroundColor: '#00bcd4' }}>
         <p>TODO: WORK</p>
       </Slide>,
-      <Slide style={{ backgroundColor: 'green' }}>
+      <Slide style={{ backgroundColor: '#ff80ab' }}>
         <p>TODO: LABS</p>
       </Slide>
     ];
@@ -199,7 +199,7 @@ class FullpageLayout extends Component {
         <Landing />
       </Slide>,
       horizontalSlider,
-      <Slide style={{ backgroundColor: 'pink' }}>
+      <Slide style={{ backgroundColor: '#ffc107' }}>
         <p>Slide 3</p>
       </Slide>
     ];

@@ -1,14 +1,12 @@
 .about {
-  background: linear-gradient(to left, white 50%, pink 50%);
+  background: linear-gradient(to left, white 50%, #ef5350 50%);
   height: 100%;
 }
 
-.about-header {
+.about-title {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  letter-spacing: 1em;
+  color: white;
 }
 
 .about-text {
@@ -26,6 +24,30 @@
 .about-paragraphs p:nth-child(even) {
   text-align: left;
   margin-right: 10px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  line-height: 30px;
+}
+
+.flex-item {
+  margin: 5px;
+  text-align: center;
+  flex: 1 0 auto;
+  height: auto;
+  max-height: 209px;
+  max-width: 209px;
+}
+
+.flex-item:before {
+  content: '';
+  float: left;
+  padding-top: 100%;
 }
 
 @media only screen and (max-width: 767px) {
