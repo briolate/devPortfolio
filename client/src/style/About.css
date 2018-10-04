@@ -52,7 +52,7 @@
 
 @media only screen and (max-width: 767px) {
   .about {
-    background: linear-gradient(to top, white 50%, pink 50%);
+    background: linear-gradient(to top, white 50%, #ef5350 50%);
   }
   .about-header {
     height: 50vh;

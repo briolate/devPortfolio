@@ -41,6 +41,7 @@ class Contact extends Component {
               </p>
               <form onSubmit={this.onSubmit}>
                 <input
+                  className="form-control form-control-lg mb-3"
                   placeholder="Name"
                   name="name"
                   value={this.state.name}
@@ -48,6 +49,7 @@ class Contact extends Component {
                   info="Enter your name"
                 />
                 <input
+                  className="form-control form-control-lg mb-3"
                   placeholder="Email"
                   name="email"
                   value={this.state.email}
@@ -55,6 +57,7 @@ class Contact extends Component {
                   info="Enter your email address"
                 />
                 <textarea
+                  className="form-control form-control-lg"
                   placeholder="Message"
                   name="message"
                   value={this.state.message}
@@ -67,6 +70,17 @@ class Contact extends Component {
                   className="btn btn-info btn-block mt-4 "
                 />
               </form>
+            </div>
+            <div className="social-media">
+              <a href="" className="social-link">
+                <i className="fas fa-envelope" />
+              </a>
+              <a href="" className="social-link">
+                <i className="fab fa-github" />
+              </a>
+              <a href="" className="social-link">
+                <i className="fab fa-facebook" />
+              </a>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import FullpageLayout from './components/layout/FullpageLayout';
 
 import './style/Landing.css';
 import './style/About.css';
+import './style/Contact.css';
 import './libs/normalize.css';
 import './style/FullpageLayout.css';
 

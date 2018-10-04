@@ -4,6 +4,7 @@ import { Fullpage, HorizontalSlider, Slide } from 'fullpage-react';
 
 import Landing from '../landing/Landing';
 import About from '../about/About';
+import Contact from '../contact/Contact';
 
 import Up from '../../img/up-chevron.png';
 import Down from '../../img/down-chevron.png';
@@ -199,8 +200,8 @@ class FullpageLayout extends Component {
         <Landing />
       </Slide>,
       horizontalSlider,
-      <Slide style={{ backgroundColor: '#ffc107' }}>
-        <p>Slide 3</p>
+      <Slide>
+        <Contact />
       </Slide>
     ];
     fullPageOptions.slides = verticalSlides;

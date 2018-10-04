@@ -1,0 +1,18 @@
+.contact {
+  background: linear-gradient(to left, #ffc107 50%, white 50%);
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  font-size: 100px;
+}
