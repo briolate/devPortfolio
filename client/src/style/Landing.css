@@ -1,5 +1,5 @@
 .landing {
-  background: linear-gradient(to left, #4caf50 50%, white 50%);
+  background: linear-gradient(to left, #4caf50 50%, #f0ffff 50%);
   height: 100%;
 }
 
@@ -20,7 +20,7 @@
   text-shadow: 3px 3px 8px black;
 }
 
-/* TODO: Install lettering.js plygin to enable floating for alternate letters */
+/* TODO: Install lettering.js plugin to enable floating for alternate letters */
 
 @keyframes floating {
   from {

@@ -5,6 +5,7 @@ import { Fullpage, HorizontalSlider, Slide } from 'fullpage-react';
 import Landing from '../landing/Landing';
 import About from '../about/About';
 import Contact from '../contact/Contact';
+import Work from '../work/Work';
 
 import Up from '../../img/up-chevron.png';
 import Down from '../../img/down-chevron.png';
@@ -180,8 +181,8 @@ class FullpageLayout extends Component {
       <Slide>
         <About />
       </Slide>,
-      <Slide style={{ backgroundColor: '#00bcd4' }}>
-        <p>TODO: WORK</p>
+      <Slide>
+        <Work />
       </Slide>,
       <Slide style={{ backgroundColor: '#ff80ab' }}>
         <p>TODO: LABS</p>
