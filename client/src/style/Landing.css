@@ -1,26 +1,114 @@
 .landing {
-  background: linear-gradient(to left, #4caf50 50%, #f0ffff 50%);
+  background: #3b5323;
   height: 100%;
 }
 
 .landing-header {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #f0ffff;
 }
 
 .landing-title {
+  font-size: 8em;
   max-width: 960px;
+  min-width: 520px;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  transform: perspective(1000px) rotateX(35deg);
+}
+
+.landing-title span {
+  width: 130px;
+}
+
+.landing-title .char1,
+.landing-title .char2,
+.landing-title .char3,
+.landing-title .char4,
+.landing-title .char5,
+.landing-title .char6,
+.landing-title .char7,
+.landing-title .char8,
+.landing-title .char9,
+.landing-title .char10,
+.landing-title .char11,
+.landing-title .char12,
+.landing-title .char13,
+.landing-title .char14,
+.landing-title .char15,
+.landing-title .char16,
+.landing-title .char17,
+.landing-title .char18 {
+  display: inline-block;
+  transition: 0.5s;
+  text-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 50px 20px rgba(0, 0, 0, 0.1);
+  filter: blur(0.5px);
+}
+
+.landing-title .char1,
+.landing-title .char3,
+.landing-title .char5,
+.landing-title .char7,
+.landing-title .char9,
+.landing-title .char11,
+.landing-title .char13,
+.landing-title .char15,
+.landing-title .char17 {
+  background: #78ab46;
+  transform: skewY(-15deg);
+}
+
+.landing-title .char2,
+.landing-title .char4,
+.landing-title .char6,
+.landing-title .char8,
+.landing-title .char10,
+.landing-title .char12,
+.landing-title .char14,
+.landing-title .char16,
+.landing-title .char18 {
+  background: #4a7023;
+  transform: skewY(15deg);
+}
+
+.landing-title:hover .char1,
+.landing-title:hover .char2,
+.landing-title:hover .char3,
+.landing-title:hover .char4,
+.landing-title:hover .char5,
+.landing-title:hover .char6,
+.landing-title:hover .char7,
+.landing-title:hover .char8,
+.landing-title:hover .char9,
+.landing-title:hover .char10,
+.landing-title:hover .char11,
+.landing-title:hover .char12,
+.landing-title:hover .char13,
+.landing-title:hover .char14,
+.landing-title:hover .char15,
+.landing-title:hover .char16,
+.landing-title:hover .char17,
+.landing-title:hover .char18 {
+  background: #78ab46;
+  transform: skewY(0deg);
+  filter: blur(0);
+  box-shadow: none;
+}
+
+.landing-title:hover {
+  transform: perspective(0px) rotateX(0deg);
 }
 
 .landing-lead {
   max-width: 510px;
   text-shadow: 3px 3px 8px black;
+  letter-spacing: 3em;
 }
-
-/* TODO: Install lettering.js plugin to enable floating for alternate letters */
 
 @keyframes floating {
   from {
@@ -41,4 +129,26 @@
   animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing-title {
+    font-size: 6em;
+  }
+  .landing-title span {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landing-title {
+    font-size: 3em;
+    padding-top: 100px;
+  }
+  .landing-title span {
+    width: 40px;
+  }
+  .landing-lead {
+    font-size: 12px;
+  }
 }

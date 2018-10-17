@@ -6,8 +6,8 @@ class Work extends Component {
       <div className="work">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 text-center landing-header">
-              <h1 className="display-3 mb-4 landing-title">WORK </h1>
+            <div className="col-md-12 text-center work-header">
+              <h1 className="display-3 mb-4 work-title">WORK </h1>
             </div>
           </div>
           <div className="grid">
