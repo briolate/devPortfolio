@@ -1,18 +1,18 @@
 .about {
-  background: linear-gradient(to left, white 50%, #ef5350 50%);
+  background: linear-gradient(to left, white 50%, #3b5323 50%);
   height: 100%;
 }
 
 .about-title {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1em;
-  color: white;
+  color: #f0ffff;
 }
 
 .about-text {
   letter-spacing: 0em;
   background: white;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px #78ab46;
   padding: 6px;
 }
 
@@ -52,7 +52,7 @@
 
 @media only screen and (max-width: 767px) {
   .about {
-    background: linear-gradient(to top, white 50%, #ef5350 50%);
+    background: linear-gradient(to top, white 50%, #3b5323 50%);
   }
   .about-header {
     height: 50vh;

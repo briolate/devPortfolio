@@ -33,7 +33,7 @@ class Landing extends Component {
                 </div>
               </h1>
               <div className="landing-lead">
-                <p>Welcome to my world.</p>
+                <p>Welcome to my world</p>
               </div>
             </div>
           </div>

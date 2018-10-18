@@ -1,7 +1,13 @@
 .contact {
-  background: linear-gradient(to left, #ffc107 50%, white 50%);
+  background: #78ab46;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1em;
+  color: #f0ffff;
 }
 
 .social-media {

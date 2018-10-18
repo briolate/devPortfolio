@@ -7,6 +7,7 @@ import './style/Landing.css';
 import './style/About.css';
 import './style/Contact.css';
 import './style/Work.css';
+import './style/ProjectCard.css';
 import './libs/normalize.css';
 import './style/FullpageLayout.css';
 

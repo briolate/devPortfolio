@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HypeningsCard from './project-cards/Hypenings';
 
 class Work extends Component {
   render() {
@@ -7,12 +8,12 @@ class Work extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center work-header">
-              <h1 className="display-3 mb-4 work-title">WORK </h1>
+              <h1 className="display-3 mb-4 work-title">Work</h1>
             </div>
           </div>
           <div className="grid">
             <div className="item item-1">
-              <p>WORK 1</p>
+              <HypeningsCard />
             </div>
             <div className="item item-2">
               <p>Work 2</p>
