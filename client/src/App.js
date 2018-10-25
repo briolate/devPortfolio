@@ -3,13 +3,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import FullpageLayout from './components/layout/FullpageLayout';
 
-import './style/Landing.css';
-import './style/About.css';
-import './style/Contact.css';
-import './style/Work.css';
-import './style/ProjectCard.css';
-import './libs/normalize.css';
-import './style/FullpageLayout.css';
+import './style/Variables.scss';
+import './style/Landing.scss';
+import './style/About.scss';
+import './style/Contact.scss';
+import './style/Work.scss';
+import './style/ProjectCard.scss';
+import './libs/normalize.scss';
+import './style/FullpageLayout.scss';
 
 class App extends Component {
   render() {

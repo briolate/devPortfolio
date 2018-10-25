@@ -6,12 +6,12 @@ class HypeningsCard extends Component {
     return (
       <div className="card-container">
         <div className="front" style={{ backgroundImage: `url(${Hypenings})` }}>
-          <div class="inner">
+          <div className="inner">
             <h1>Hypenings</h1>
           </div>
         </div>
         <div className="back">
-          <div class="inner">
+          <div className="inner">
             <div>
               <a href="#" target="#">
                 View Project

@@ -1,0 +1,28 @@
+@import 'Variables';
+
+.about {
+  background: $medium-green 50%;
+  height: 100%;
+}
+
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1em;
+  color: $whiteish;
+}
+
+.about-text {
+  background: $whiteish;
+  box-shadow: 5px 10px $light-green;
+  padding: 6px;
+}
+
+.about-paragraphs p:nth-child(odd) {
+  text-align: right;
+  margin-left: 10px;
+}
+
+.about-paragraphs p:nth-child(even) {
+  text-align: left;
+  margin-right: 10px;
+}

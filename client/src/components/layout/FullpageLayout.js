@@ -122,6 +122,7 @@ class FullpageLayout extends Component {
     const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
     const nextSlide = changeFullpageSlide.bind(null, currentActive + 1);
     const goToTop = changeFullpageSlide.bind(null, 0);
+    const goToBottom = changeFullpageSlide.bind(null, 2);
 
     const horizontalSliderName = horizontalSliderProps.name;
     const horizontalActive = this.state.active[horizontalSliderName];
@@ -142,8 +143,8 @@ class FullpageLayout extends Component {
     if (this.state.Fullpage === 0) {
       topNav = (
         <div style={topNavStyle2}>
-          <span onClick={prevSlide}>
-            <i className="fas fa-envelope" style={{ fontSize: '36px' }} />
+          <span onClick={goToBottom}>
+            <i className="far fa-address-card" />
           </span>
         </div>
       );
@@ -157,11 +158,21 @@ class FullpageLayout extends Component {
       );
     }
 
-    const bottomNav = (
+    let bottomNav;
+
+    bottomNav = (
       <span onClick={nextSlide} style={bottomNavStyle}>
         <img src={Down} alt="Down arrow" className="downArrow" />
       </span>
     );
+
+    if (this.state.Fullpage === 2) {
+      bottomNav = (
+        <span onClick={goToTop} style={topNavStyle2}>
+          <i className="fa fa-home" />
+        </span>
+      );
+    }
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
