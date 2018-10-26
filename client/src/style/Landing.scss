@@ -1,7 +1,7 @@
 @import 'Variables';
 
 .landing {
-  background: $dark-green;
+  background: $vanilla-grey;
   height: 100%;
 }
 
@@ -61,7 +61,7 @@
 .landing-title .char13,
 .landing-title .char15,
 .landing-title .char17 {
-  background: $light-green;
+  background: $lime-green;
   transform: skewY(-15deg);
 }
 
@@ -74,7 +74,7 @@
 .landing-title .char14,
 .landing-title .char16,
 .landing-title .char18 {
-  background: #4a7023;
+  background: $dark-grey;
   transform: skewY(15deg);
 }
 
@@ -96,7 +96,7 @@
 .landing-title:hover .char16,
 .landing-title:hover .char17,
 .landing-title:hover .char18 {
-  background: $light-green;
+  background: $lime-green;
   transform: skewY(0deg);
   filter: blur(0);
   box-shadow: none;
@@ -106,10 +106,35 @@
   transform: perspective(0px) rotateX(0deg);
 }
 
+// Change color of individual letters. TODO: Add delay to each
+.landing-title:hover .char5 {
+  color: $dark-grey;
+}
+.landing-title:hover .char12 {
+  color: $dark-grey;
+}
+.landing-title:hover .char6 {
+  color: $dark-grey;
+}
+.landing-title:hover .char13 {
+  color: $dark-grey;
+}
+.landing-title:hover .char2 {
+  color: $dark-grey;
+}
+.landing-title:hover .char3 {
+  color: $dark-grey;
+}
+.landing-title:hover .char15 {
+  color: $dark-grey;
+}
+
+// TODO: Do something else with this. Maybe get rid of it
 .landing-lead {
   max-width: 510px;
   text-shadow: 3px 3px 8px black;
   letter-spacing: 3em;
+  padding-left: 3em;
 }
 
 @keyframes floating {
@@ -129,8 +154,8 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
   margin-top: 5px;
+  color: $dark-grey;
 }
 
 @media only screen and (max-width: 1020px) {

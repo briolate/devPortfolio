@@ -1,7 +1,7 @@
 @import 'Variables';
 
 .contact {
-  background: $light-green;
+  background: $lime-green;
   height: 100%;
   font-family: $main-font;
 }
@@ -9,6 +9,7 @@
 .contact-title {
   font-family: $main-font;
   letter-spacing: 1em;
+  padding-left: 1em;
   color: $whiteish;
 }
 

@@ -1,17 +1,27 @@
-html {
-  height: 100%;
-}
+// Starter colors
+$dark-grey: #3d3d3f;
+$vanilla-grey: #f6f5f3;
+$lime-green: #7dce94;
+$whiteish: #f6f5f3;
 
-* {
-  margin: 0;
-  padding: 0;
-}
+// Modern rust colors
+$black: #2c2c2c;
+$silver: #4b6777;
+$red: #c1432e;
+$gold: #ce9e62;
+$whiteish: #f6f5f3;
 
-// Primary colors
-$dark-green: #3b5323;
-$medium-green: #4a7023;
-$light-green: #78ab46;
-$whiteish: #f0ffff;
+// Sleek modern colors
+$dark-blue: #111c30;
+$dark-pink: #9a4d55;
+$beige: #80756b;
+$whiteish: #f6f5f3;
+
+// Minimal colors
+$gold-top: #d8ab4e;
+$gold-bottom: #b48c36;
+$charcoal-black: #040404;
+$whiteish: #f6f5f3;
 
 // Primary font
 $main-font: 'Montserrat';

@@ -1,23 +1,13 @@
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  line-height: 30px;
+@import 'Variables';
+
+.resume {
+  background: $dark-grey;
+  height: 100%;
 }
 
-.flex-item {
-  margin: 5px;
-  text-align: center;
-  flex: 1 0 auto;
-  height: auto;
-  max-height: 209px;
-  max-width: 209px;
-}
-
-.flex-item:before {
-  content: '';
-  float: left;
-  padding-top: 100%;
+.resume-title {
+  font-family: $main-font;
+  letter-spacing: 0.5em;
+  padding-left: 0.5em;
+  color: $vanilla-grey;
 }

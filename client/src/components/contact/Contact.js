@@ -35,7 +35,9 @@ class Contact extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-3 mb-4 contact-title">Contact</h1>
+              <h1 className="contact-title display-3 mb-4 text-center">
+                Contact
+              </h1>
               <p className="lead">
                 Feel free use the form below to drop me a line.
               </p>
