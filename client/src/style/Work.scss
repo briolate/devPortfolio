@@ -10,6 +10,12 @@
   letter-spacing: 1em;
   padding-left: 1em;
   color: $whiteish;
+  background-color: $dark-grey;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: $whiteish 2px 3px 6px;
 }
 
 .item {
